@@ -1,0 +1,111 @@
+@charset "UTF-8";
+ * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+        }
+
+        .left {
+            flex: 1;
+            background-color: #7a1c1c;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+     
+
+
+        .register-box {
+            width: 80%;
+            max-width: 400px;
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 30px;
+            color: #333;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .register-box h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #7a1c1c;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px 15px;
+            border-radius: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background-color: #7a1c1c;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            background-color: #5c1313;
+        }
+
+        .error, .success {
+            margin-top: 15px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .error {
+            color: red;
+        }
+
+        .success {
+            color: green;
+        }
+
+        .signup-link {
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .signup-link a {
+            color: #7a1c1c;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .left {
+                display: none;
+            }
+            .right {
+                flex: 1;
+            }
+        }
