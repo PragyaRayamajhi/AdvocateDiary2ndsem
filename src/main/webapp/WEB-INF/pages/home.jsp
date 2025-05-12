@@ -29,7 +29,8 @@
 			<p>Advocate Diary is a comprehensive case management system
 				designed specifically for legal professionals. Manage cases, track
 				time, organize documents, and increase productivity.</p>
-			<button class="cta-button">Get Started</button>
+			<a href="${pageContext.request.contextPath}/services" class="cta-button">Get Started</a>
+
 		</div>
 	</section>
 
@@ -96,7 +97,7 @@
 					<div class="testimonial-author">
 						<div class="author-avatar"></div>
 						<div class="author-info">
-							<h4>Aruna Pokharel</h4>
+							<h4>Sarah Johnson</h4>
 							<p>Family Law Attorney</p>
 						</div>
 					</div>
@@ -110,8 +111,8 @@
 					<div class="testimonial-author">
 						<div class="author-avatar"></div>
 						<div class="author-info">
-							<h4>Samriddhi GC</h4>
-							<p>GC & Associates</p>
+							<h4>Michael Patel</h4>
+							<p>Partner, Patel & Associates</p>
 						</div>
 					</div>
 				</div>
@@ -124,7 +125,7 @@
 					<div class="testimonial-author">
 						<div class="author-avatar"></div>
 						<div class="author-info">
-							<h4>Rozalina Karki</h4>
+							<h4>Elizabeth Chen</h4>
 							<p>Corporate Law Specialist</p>
 						</div>
 					</div>

@@ -37,7 +37,7 @@ public class RegisterController extends HttpServlet {
         String username = request.getParameter("username");
         String phone = request.getParameter("phone");
 
-        // Validations
+      
         if (ValidationUtil.isNullOrEmpty(name) ||
             ValidationUtil.isNullOrEmpty(email) ||
             ValidationUtil.isNullOrEmpty(address) ||
@@ -62,6 +62,16 @@ public class RegisterController extends HttpServlet {
             forwardWithError(request, response, "Username must start with a letter and contain only letters and numbers.");
             return;
         }
+        if (!ValidationUtil.isValidName(name)) {
+            forwardWithError(request, response, "Name must contain only letters and up to three words.");
+            return;
+        }
+
+        if(!ValidationUtil.isValidAddress(address)) {
+       	 forwardWithError(request, response, "Address must have letter and number only");
+            return;
+       }
+
 
         UserModel user = new UserModel(name, email, address, password, 0, username, phone);
 

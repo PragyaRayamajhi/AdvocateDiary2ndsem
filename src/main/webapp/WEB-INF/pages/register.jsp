@@ -68,7 +68,7 @@
         </form>
 
         <div class="signup-link">
-           <p>Don't have an account? <a href="${pageContext.request.contextPath}/login">Sign in now</a></p>
+           <p>Don't have an account? <a href="${pageContext.request.contextPath}/login">Sign up now</a></p>
         
         </div>
 

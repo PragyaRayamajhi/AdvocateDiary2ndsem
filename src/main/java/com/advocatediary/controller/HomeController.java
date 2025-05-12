@@ -34,6 +34,6 @@ public class HomeController extends HttpServlet {
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/WEB-INF/pages/home.jsp");
 		dispatcher.forward(request, response);
 
-		// If session exists and user is logged in, display the home page
+	
 	}
 }

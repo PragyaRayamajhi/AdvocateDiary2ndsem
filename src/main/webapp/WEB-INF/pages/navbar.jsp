@@ -29,8 +29,12 @@ if (usernav == null) {
 					Us</a></li>
 			<li><a href="${pageContext.request.contextPath}/contact">Contact
 					Us</a></li>
+					<li><a href="${pageContext.request.contextPath}/faq">FAQ
+					</a></li>
+					<li><a href="${pageContext.request.contextPath}/services">Services
+					</a></li>
 			<%
-			if (usernav.isAdmin() == 1) { // Or use isAdmin() if that's your method
+			if (usernav.isAdmin() == 1) { 
 			%>
 			<li><a href="${pageContext.request.contextPath}/admin/dashboard">Dashboard</a></li>
 			<%

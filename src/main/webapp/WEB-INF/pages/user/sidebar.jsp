@@ -97,10 +97,10 @@
 .logout-section {
 	padding: 1rem 1.5rem;
 	border-top: 1px solid rgba(255, 255, 255, 0.1);
-	height:90px;
-	display:flex;
-	flex-direction:column;
-	justify-content:space-between;
+	height: 90px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 }
 
 .logout-link {
@@ -140,8 +140,12 @@
 				style="color: white; text-decoration: none;"> <span
 					class="menu-icon"><i class="fas fa-tachometer-alt"></i></span> <span
 					class="menu-text">Dashboard</span></a></li>
-			<li class="menu-item"><span class="menu-icon"><i
-					class="fas fa-briefcase"></i></span> <span class="menu-text">Cases</span>
+			<li class="menu-item"><a
+				href="${pageContext.request.contextPath}/user/case"
+				style="color: white; text-decoration: none;"> <span
+					class="menu-icon"><i class="fas fa-briefcase"></i></span> <span
+					class="menu-text">Cases</span>
+			</a>
 			</li>
 			<li class="menu-item"><span class="menu-icon"><i
 					class="fas fa-users"></i></span> <span class="menu-text">Clients</span></li>
@@ -163,11 +167,10 @@
 	</div>
 
 	<div class="logout-section">
-		<a href="${pageContext.request.contextPath}/"
-			class="logout-link"> <span
-			class="logout-icon"><i class="fas fa-home"></i></span><span> Home</span>
-		</a> 
-		<a class="logout-link"
+		<a href="${pageContext.request.contextPath}/" class="logout-link">
+			<span class="logout-icon"><i class="fas fa-home"></i></span><span>
+				Home</span>
+		</a> <a class="logout-link"
 			href="${pageContext.request.contextPath}/logout"> <span
 			class="logout-icon"><i class="fas fa-sign-out-alt"></i></span> <span
 			class="menu-text">Logout</span>

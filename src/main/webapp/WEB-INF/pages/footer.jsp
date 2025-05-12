@@ -36,10 +36,15 @@
 		<div class="footer-links">
 			<h3>Company</h3>
 			<ul>
-				<li><a href="#">About Us</a></li>
-				<li><a href="#">Careers</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="${pageContext.request.contextPath}/">About Us</a></li>
+				
+				<li><a href="${pageContext.request.contextPath}/">Contact</a></li>
+				<li><a href="${pageContext.request.contextPath}/faq">FAQ
+					</a></li>
+					<li><a href="${pageContext.request.contextPath}/services">Services
+					</a></li>
 				<li><a href="#">Legal</a></li>
+				<li><a href="#">Careers</a></li>
 			</ul>
 		</div>
 	</div>

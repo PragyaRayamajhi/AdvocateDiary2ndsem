@@ -2,6 +2,7 @@ package com.advocatediary.model;
 
 
 public class UserModel{
+	private int id;
     private String name;
     private String email;
     private String address;
@@ -19,7 +20,7 @@ public class UserModel{
 
     // Parameterized constructor
     public UserModel(String name, String email, String address, String password, int isAdmin, String username, String phone) {
-        
+     
         this.name = name;
         this.email = email;
         this.address = address;
@@ -29,7 +30,12 @@ public class UserModel{
         this.phone = phone;
     }
 
-    
+    public int getId() {
+    	return id;
+    }
+    public void setId(int id) {
+    	this.id=id;
+    }
 
     public String getName() {
         return name;
